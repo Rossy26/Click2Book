@@ -7,5 +7,6 @@ Click2Book es una página web diseñada para ayudar a estudiantes y trabajadores
 ✔ Barrio 
 ✔ Calificación 
 
+Autores: Yesid Soto @Yes577, Carlos Rincones @carlosrs14, Rossimar Jiménez @Rossy26
 
 
