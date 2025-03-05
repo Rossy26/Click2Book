@@ -54,6 +54,7 @@ nav img {
     flex-direction: column;
     display: flex;
 }
+
 #filter-inputs {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -61,13 +62,23 @@ nav img {
     gap: 5px;
     justify-content: center;
     align-items: center;
+}
+
+#filter-inputs select {
+    appearance: none;
+    background-color:#f1d4af;
+    color: #774f38;
+    border-radius: 10%;
+    font-size: 20px;
 
 }
-#filter-btn button{
-    color: #774f38;
-    padding: 10px;
-    margin: 0;
+#filter-inputs option:hover {
+    color:#774f38;
+   background-color: #774f38;
+
 }
+
+
 
 .filter-number input{
     width: 120px;
@@ -79,6 +90,12 @@ nav img {
     display: flex;
     align-items: center;
 
+}
+
+#filter-btn button{
+    color: #774f38;
+    padding: 10px;
+    margin: 0;
 }
 
 /* main */
