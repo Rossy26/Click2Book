@@ -6,8 +6,11 @@ body {
     background-position: left;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
 }
-
+h1, h2, p, button {
+    font-family: 'Lato', sans-serif;
+}
 a {
     text-decoration: None;
     color: #ece5ce;
@@ -20,9 +23,10 @@ a:hover {
 nav a i, nav a p {
     font-size: 24px;
 }
+
 /* header */
 nav {
-    display: flex;
+    display: inline-flex;
     justify-content: space-around;
     padding: 15px;
     background-color: #774f38;
@@ -30,12 +34,19 @@ nav {
     position: fixed;
     width: 100%;
     align-items: center;
+    z-index: 10;
 }
 
 nav div a {
     display: flex;
     align-items: center;
 }
+nav div a:hover {
+    display: flex;
+    align-items: center;
+    transform: scale(1.2);
+}
+
 nav img {
     padding: 0;
     margin: 0;
@@ -53,32 +64,30 @@ nav img {
     padding-top: 120px;
     flex-direction: column;
     display: flex;
+    transition: 0.3s ease-in-out;
 }
 
 #filter-inputs {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     padding: 10px;
     gap: 5px;
     justify-content: center;
     align-items: center;
 }
 
-#filter-inputs select {
-    appearance: none;
+#filter-inputs select, #filter-inputs input {
     background-color:#f1d4af;
     color: #774f38;
     border-radius: 10%;
-    font-size: 20px;
-
+    font-size: 18px;
 }
+
 #filter-inputs option:hover {
     color:#774f38;
    background-color: #774f38;
 
 }
-
-
 
 .filter-number input{
     width: 120px;
@@ -89,14 +98,37 @@ nav img {
 .filter-check {
     display: flex;
     align-items: center;
-
 }
 
-#filter-btn button{
-    color: #774f38;
-    padding: 10px;
-    margin: 0;
+.filter-check input {
+    width: 18px;
+    height: 18px;
+    background-color: #5c3a2c;
+    accent-color: #774f38;
 }
+.filter-check p {
+    font-size: 18px;
+}
+
+#filter-btn button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#filter-btn button {
+    background-color: #f1d4af;
+    color: #5c3a2c;
+}
+
+#filter-btn button:hover {
+    background-color: #5c3a2c;
+    color: #f1d4af;
+}
+
 
 /* main */
 main {
@@ -112,53 +144,98 @@ main {
 }
 
 .pension {
-    border-radius: 10%;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    size: 300px;
     padding: 20px;
     background: #f1d4af;
+    transition: transform 0.3s ease-in-out;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
     
+}
+
+.pension:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .div-pension {
     display: flex;
     align-items: center;
-    gap: 15px;
-    justify-content: space-around;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
 }
-.div-pension a  i{
+
+.pension a {
+    display: inline-flex;
+}
+.div-pension i, .iconos i {
     color: #774f38;
-    font-size: 22px;
+    transition: color 0.3s ease-in-out;
+    font-size: 26px;
 }
+
+.div-pension i:hover, .iconos i:hover {
+    transform: scale(1.2);
+}
+
 .imagen-pension {
     width: 90%;
     height: 90%;
-    border-radius: 10%;
+    border-radius: 12px;
+    object-fit: cover;
+    cursor: pointer;
 }
-.pension a {
-    color: #774f38;
 
-}
 .iconos {
     display: flex;
     justify-content: space-around;
     gap: 30px;
     font-size: 20px;
 }
-
 #paginacion {
     display: flex;
     justify-content: center;
     gap: 20px;
     align-items: center;
-}
-#paginacion a {
-    color: #774f38;
+    padding: 20px;
 }
 
+#paginacion a {
+    color: #774f38;
+    font-size: 24px;
+    display: inline-flex;
+}
+
+#paginacion a:hover {
+    color: #5c3a2c;
+    transform: scale(1.2);
+}
+
+.pagina-numeros {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #774f38;
+}
+.pagina-numeros span {
+    cursor: pointer;
+}
+
+.pagina-numeros span:hover {
+    transform: scale(1.2);
+}
+.pagina-activa {
+    background-color: #774f38;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
 /* footer */
 
 footer {

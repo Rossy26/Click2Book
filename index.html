@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Click2Book</title>
@@ -62,10 +63,10 @@
                 </select>
             </div>
             <div class="filter-number">
-                <input type="number" name="" id="" placeholder="precio  minimo" min="0">
+                <input type="number" name="" id="" placeholder="$ minimo" min="0">
             </div>
             <div class="filter-number">
-                <input type="number" name="" id="" placeholder="precio máximo" min="0">
+                <input type="number" name="" id="" placeholder="$ máximo" min="0">
             </div>
             <div class="filter-check">
                 <input type="checkbox" name="" id="">
@@ -328,16 +329,19 @@
 
     <div id="paginacion">
         <div>
-            <a href="">
+            <a href="" class="pag-prev">
                 <i class="bi bi-arrow-left-short"></i>
             </a>
         </div>
-        <div>
-            <p>Aqui van los números de las páginas</p>
-
+        <div class="pagina-numeros">
+            <span>1</span>
+            <span class="pagina-activa">2</span>
+            <span>3</span>
+            <span>...</span>
+            <span>10</span>
         </div>
         <div>
-            <a href="">
+            <a href="" class="pag-sig">
                 <i class="bi bi-arrow-right-short"></i>
             </a>
         </div>
@@ -346,7 +350,7 @@
     
     <footer>
         <div class="footer">
-            <p id="copyrigth">copy</p>
+            <p id="copyrigth">© 2025 - Todos los derechos reservados</p>
         </div>
     </footer>
 </body>
