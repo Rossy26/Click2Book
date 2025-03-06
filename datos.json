@@ -1,0 +1,12 @@
+{
+    "pension": [
+        {
+            "tipo": "apartamento",
+            "precio": 10000
+        },
+        {
+            "precio":10000
+        }
+    ]
+    
+}
