@@ -1,12 +1,74 @@
 {
-    "pension": [
+    "pensiones": [
         {
-            "tipo": "apartamento",
-            "precio": 10000
+            "tipo": "casa",
+            "precio": 500000,
+            "stars":5,
+            "images": [
+                "assets/pension-frente.jpg",
+                "assets/pension-dentro.jpg",
+                "assets/pension-dentro-cuarto.jpg"
+            ]
         },
         {
-            "precio":10000
+            "tipo": "apartaestudio",
+            "precio": 450000,
+            "stars": 3.7,
+            "images": [
+                "assets/pension-frente.jpg",
+                "assets/pension-dentro.jpg",
+                "assets/pension-dentro-cuarto.jpg"
+            ]
+        },
+        {
+            "tipo": "apartaestudio",
+            "precio": 600000,
+            "stars": 4,
+            "images": [
+                "assets/pension-frente.jpg",
+                "assets/pension-dentro.jpg",
+                "assets/pension-dentro-cuarto.jpg"
+            ]
+        },
+        {
+            "tipo": "apartaestudio",
+            "precio": 500000,
+            "stars": 4.9,
+            "images": [
+                "assets/pension-frente.jpg",
+                "assets/pension-dentro.jpg",
+                "assets/pension-dentro-cuarto.jpg"
+            ]
+        },
+        {
+            "tipo": "apartaestudio",
+            "precio": 500000,
+            "stars": 3.5,
+            "images": [
+                "assets/pension-frente.jpg",
+                "assets/pension-dentro.jpg",
+                "assets/pension-dentro-cuarto.jpg"
+            ]
+        },
+        {
+            "tipo": "casa",
+            "precio": 500000,
+            "stars": 3.2,
+            "images": [
+                "assets/pension-frente.jpg",
+                "assets/pension-dentro.jpg",
+                "assets/pension-dentro-cuarto.jpg"
+            ]
+        },
+        {
+            "tipo": "casa",
+            "precio": 500000,
+            "stars": 3.7,
+            "images": [
+                "assets/pension-frente.jpg",
+                "assets/pension-dentro.jpg",
+                "assets/pension-dentro-cuarto.jpg"
+            ]
         }
     ]
-    
 }
