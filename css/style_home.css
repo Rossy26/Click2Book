@@ -1,0 +1,54 @@
+body {
+    background-color: #ece5ce;
+    background-image: url("../assets/background.jpeg");
+    margin: 0;
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2, p, button {
+    font-family: 'Lato', sans-serif;
+}
+a {
+    text-decoration: None;
+    color: #ece5ce;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav a i, nav a p {
+    font-size: 24px;
+}
+
+/* header */
+nav {
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #774f38;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    z-index: 10;
+}
+
+nav div a {
+    display: flex;
+    align-items: center;
+}
+nav div a:hover {
+    display: flex;
+    align-items: center;
+    transform: scale(1.2);
+}
+
+nav img {
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+}

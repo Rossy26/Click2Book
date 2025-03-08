@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+}
+
+#logo {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+}
+
+#datos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;    
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+}
+
+#formulario {
+    width: 80%;
+}
+
+h1, p, a {
+    font-family: 'Poppins', 'Lato', sans-serif;
+}
+
+.dato {
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#datos input {
+    font-size: 24px;
+    border-radius: 7%;
+}
+
+#btn-login {
+    margin: 30px;
+    color: black;
+    background-color: bisque;
+    border-radius: 10%;
+    font-family: 'Poppins', 'Lato', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    width: 50%;
+}
+
+#formulario a {
+    /*color: ;*/
+    font-size: 18px;
+}
+
+#fondo {
+    width: 100%;
+    height: 100%;
+}
+
+#inicio-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+#imagen {
+    width: 100%;
+    background: linear-gradient(to bottom right, #ffffff, #000000);
+}
+
+footer {
+    justify-content: center;
+    display: flex;
+}
