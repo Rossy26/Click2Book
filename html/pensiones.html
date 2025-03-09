@@ -9,115 +9,96 @@
     <title>Click2Book</title>
 </head>
 <body>
-   <nav>
-        <div>
+   <nav class="navbar">
+        <div class="logo">
             <a href="../index.html">
                 <img src="../assets/icon128px.png" alt="Logo de página" id="icon">
+                <span>Click2Book</span>
             </a>
         </div>
-        <div>
-            <a href="../index.html">
-                <i class="bi bi-house"></i>
-                <P>Home</P>
-            </a>
-        </div>
-        <div>
-            <a href="pensiones.html">
-                <i class="bi bi-building"></i>
-                <P>Pensiones</P>
-            </a>
-        </div>
-        <div>
-            <a href="">
-                <i class="bi bi-bookmark-check"></i>
-                <p>Guardados</p>
-            </a>
-        </div>
-        <div>
-            <a href="">
-                <i class="bi bi-wrench"></i>
-                <p>Help</p>
-            </a>
-        </div>
-        <div>
-            <a href="login.html"><i class="bi bi-person-circle"></i></a>
-        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html"><i class="bi bi-house"></i> Home</a></li>
+            <li><a href="pensiones.html"><i class="bi bi-building"></i> Pensiones</a></li>
+            <li><a href="#"><i class="bi bi-bookmark-check"></i> Guardados</a></li>
+            <li><a href="#"><i class="bi bi-wrench"></i> Ayuda</a></li>
+            <li><a href="login.html"><i class="bi bi-person-circle"></i></a></li>
+        </ul>
     </nav>
-
-    <section id="filters">
-        <form action="" method="post">
-            <div id="filter-inputs">
-                <div class="filter-select">
-                    <select name="" id="">
-                        <option value="">Todos</option>
-                        <option value="">Casa</option>
-                        <option value="">Apartamento</option>
-                        <option value="">Apartaestudio</option>
-                    </select>
+    <main>
+        <section id="filters">
+            <form action="" method="post">
+                <div id="filter-inputs">
+                    <div class="filter-select">
+                        <select name="" id="">
+                            <option value="">Todos</option>
+                            <option value="">Casa</option>
+                            <option value="">Apartamento</option>
+                            <option value="">Apartaestudio</option>
+                        </select>
+                    </div>
+                    <div class="filter-select">
+                        <select name="" id="">
+                            <option value="">Todos</option>
+                            <option value="">villa bella</option>
+                            <option value="">villa marbella</option>
+                            <option value="">las malvinas</option>
+                        </select>
+                    </div>
+                    <div class="filter-number">
+                        <input type="number" name="" id="" placeholder="$ minimo" min="0">
+                    </div>
+                    <div class="filter-number">
+                        <input type="number" name="" id="" placeholder="$ máximo" min="0">
+                    </div>
+                    <div class="filter-check">
+                        <input type="checkbox" name="" id="">
+                        <p>Cupo completo</p>
+                    </div>
+                    <div class="filter-check">
+                        <input type="checkbox" name="" id="">
+                        <p>Ambiente familiar</p>
+                    </div>
+                    <div class="filter-check">
+                        <input type="checkbox" name="" id="">
+                        <p>Individual</p>
+                    </div>
+                    <div class="filter-check">
+                        <input type="checkbox" name="" id="">
+                        <p>Aire acondicionado</p>
+                    </div>
                 </div>
-                <div class="filter-select">
-                    <select name="" id="">
-                        <option value="">Todos</option>
-                        <option value="">villa bella</option>
-                        <option value="">villa marbella</option>
-                        <option value="">las malvinas</option>
-                    </select>
-                </div>
-                <div class="filter-number">
-                    <input type="number" name="" id="" placeholder="$ minimo" min="0">
-                </div>
-                <div class="filter-number">
-                    <input type="number" name="" id="" placeholder="$ máximo" min="0">
-                </div>
-                <div class="filter-check">
-                    <input type="checkbox" name="" id="">
-                    <p>Cupo completo</p>
-                </div>
-                <div class="filter-check">
-                    <input type="checkbox" name="" id="">
-                    <p>Ambiente familiar</p>
-                </div>
-                <div class="filter-check">
-                    <input type="checkbox" name="" id="">
-                    <p>Individual</p>
-                </div>
-                <div class="filter-check">
-                    <input type="checkbox" name="" id="">
-                    <p>Aire acondicionado</p>
-                </div>
+            </form>
+            
+            <div id="filter-btn">
+                <button type="submit">Buscar</button>
+                <button>Restablecer filtros</button>
             </div>
-        </form>
-        
-        <div id="filter-btn">
-            <button type="submit">Buscar</button>
-            <button>Restablecer filtros</button>
-        </div>
-    </section>
-           
-    <section id = "pensiones">
-        
-    </section>
+        </section>
+            
+        <section id = "pensiones">
+            
+        </section>
 
-    <div id="paginacion">
-        <div>
-            <a href="" class="pag-prev">
-                <i class="bi bi-arrow-left-short"></i>
-            </a>
+        <div id="paginacion">
+            <div>
+                <a href="" class="pag-prev">
+                    <i class="bi bi-arrow-left-short"></i>
+                </a>
+            </div>
+            <div class="pagina-numeros">
+                <span>1</span>
+                <span class="pagina-activa">2</span>
+                <span>3</span>
+                <span>...</span>
+                <span>10</span>
+            </div>
+            <div>
+                <a href="" class="pag-sig">
+                    <i class="bi bi-arrow-right-short"></i>
+                </a>
+            </div>
         </div>
-        <div class="pagina-numeros">
-            <span>1</span>
-            <span class="pagina-activa">2</span>
-            <span>3</span>
-            <span>...</span>
-            <span>10</span>
-        </div>
-        <div>
-            <a href="" class="pag-sig">
-                <i class="bi bi-arrow-right-short"></i>
-            </a>
-        </div>
-    </div>
-
+    </main>
     <footer>
         <div class="footer">
             <p id="copyrigth">© 2025 - Todos los derechos reservados</p>
