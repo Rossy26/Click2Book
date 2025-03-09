@@ -48,8 +48,9 @@ function create_div_image(i) {
 
     const img = create_etiqueta("img", `img-pension-${i + 1}`);
     img.src = "../assets/pension-frente.jpg";
-    img.alt = "Imagen de pensión";
+    img.alt = "Imagen de la pensión";
     img.classList.add("imagen-pension");
+    img.title = "Imagen de la pension";
     div_imagen.appendChild(img);
 
     const nextArrow = create_etiqueta("a", `next-arrow-${i + 1}`, "-");
@@ -101,12 +102,14 @@ function arrows_functionalities(i) {
 
 function create_div_icons() {
     div_buttons = create_etiqueta("div", "-", "iconos");
-
+    const diccionario = {"calendar":"Agendar visita", "geo-alt":"Ver en el mapa","bookmark":"Guardados", "info-circle":"Más información", "star":"Calificación"};
     const icons = ["calendar", "geo-alt", "bookmark", "info-circle", "star"];
-    icons.forEach(icon => {
+    icons.forEach(i => {
         a = create_etiqueta("a", "-", "-");
         a.href = "#";
-        a.appendChild(create_etiqueta("i", "-", `bi bi-${icon}`))
+        let icon = create_etiqueta("i", "-", `bi bi-${i}`);
+        icon.title = diccionario[i];
+        a.appendChild(icon);
         div_buttons.appendChild(a);
     });
 

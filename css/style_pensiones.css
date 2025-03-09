@@ -1,7 +1,7 @@
 /* general */
 body {
-    background-color: #ece5ce;
-    background-image: url("../assets/background.jpeg");
+    background-color: #808761;
+    background-image: url("../assets/fondoPagina.png");
     margin: 0;
     background-position: left;
     background-size: cover;
@@ -15,7 +15,7 @@ h1, h2, p, button {
 
 a {
     text-decoration: None;
-    color: #ece5ce;
+    color: #1a2015;
 }
 
 a:hover {
@@ -31,7 +31,7 @@ nav {
     display: inline-flex;
     justify-content: space-around;
     padding: 15px;
-    background-color: #774f38;
+    background-color: #515c41;
     margin: 0;
     position: fixed;
     width: 100%;
@@ -57,7 +57,7 @@ nav img {
 }
 
 #icon {
-    background-color: #774f38;
+    background-color:#515c41;
 }
 
 #filters {
@@ -77,15 +77,15 @@ nav img {
 }
 
 #filter-inputs select, #filter-inputs input {
-    background-color:#f1d4af;
-    color: #774f38;
+    background-color:#bbbe87;
+    color: #1a2015;
     border-radius: 10%;
     font-size: 18px;
 }
 
 #filter-inputs option:hover {
-    color:#774f38;
-   background-color: #774f38;
+    color:#1a2015;
+   background-color: #bbbe87;
 
 }
 
@@ -103,8 +103,8 @@ nav img {
 .filter-check input {
     width: 18px;
     height: 18px;
-    background-color: #5c3a2c;
-    accent-color: #774f38;
+    background-color:#bbbe87;
+    accent-color: #bbbe87;
 }
 
 .filter-check p {
@@ -121,13 +121,13 @@ nav img {
 }
 
 #filter-btn button {
-    background-color: #f1d4af;
-    color: #5c3a2c;
+    background-color: #bbbe87;
+    color: #1a2015;
 }
 
 #filter-btn button:hover {
-    background-color: #5c3a2c;
-    color: #f1d4af;
+    background-color: #515c41;
+    color: #1a2015;
 }
 
 
@@ -151,7 +151,7 @@ main {
     align-items: center;
     text-align: center;
     padding: 20px;
-    background: #f1d4af;
+    background: #bbbe87;
     transition: transform 0.3s ease-in-out;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 350px;
     
@@ -174,7 +174,7 @@ main {
     display: inline-flex;
 }
 .div-pension i, .iconos i {
-    color: #774f38;
+    color: #1a2015;
     transition: color 0.3s ease-in-out;
     font-size: 26px;
 }
@@ -207,13 +207,13 @@ main {
 }
 
 #paginacion a {
-    color: #774f38;
+    color: #1a2015;
     font-size: 24px;
     display: inline-flex;
 }
 
 #paginacion a:hover {
-    color: #5c3a2c;
+    color: #1a2015;
     transform: scale(1.2);
 }
 
@@ -222,7 +222,7 @@ main {
     gap: 10px;
     font-size: 18px;
     font-weight: bold;
-    color: #774f38;
+    color:#1a2015;
 }
 .pagina-numeros span {
     cursor: pointer;
@@ -232,7 +232,7 @@ main {
     transform: scale(1.2);
 }
 .pagina-activa {
-    background-color: #774f38;
+    background-color: #515c41;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
@@ -245,6 +245,6 @@ footer {
     justify-content: center;
     gap: 20px;
     align-items: center;
-    background-color: #774f38;
+    background-color: #515c41;
     width: 100%;
 }
