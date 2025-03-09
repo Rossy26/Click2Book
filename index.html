@@ -1,100 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style_home.css">
+    <title>Click2Book</title>
 </head>
 <body>
-    <nav>
-        <div>
-            <a href="index.html">
-                <p>Click2Book</p>
-                <img src="assets/icon128px.png" alt="Logo de página" id="icon">
-            </a>
-        </div>
-        <div>
-            <a href="index.html">
-                <i class="bi bi-house"></i>
-                <P>Home</P>
-            </a>
-        </div>
-        <div>
-            <a href="html/pensiones.html">
-                <i class="bi bi-building"></i>
-                <P>Pensiones</P>
-            </a>
-        </div>
-        <div>
-            <a href="">
-                <i class="bi bi-bookmark-check"></i>
-                <p>Guardados</p>
-            </a>
-        </div>
-        <div>
-            <a href="">
-                <i class="bi bi-wrench"></i>
-                <p>Help</p>
-            </a>
-        </div>
-        <div>
-            <a href="html/login.html"><i class="bi bi-person-circle"></i></a>
-        </div>
-    </nav>
-    
-    <div id="eslogan">
-        <h1>Tu hogar ideal por temporada, sin complicaciones</h1>
-        <p>Encuentra, reserva y disfruta con total facilidad</p>
-    </div>
-    <div id="btn-registro">
-        <input id="btn-registro" type="submit" value="Registrate de forma gratuita">
-    </div>
-    <div id="inicio-sesion">
-        <a href="">¿Ya tienes una cuenta? Inicia sesión</a>
-    </div>
-    <div id="mejores-calificaciones">
-        <h2>Mejores Calificadas</h2>
-    </div>
-    <section>
-        <!--aqui van las pensiones con mayor cantidad de estrellas-->
-        
-    </section>
-    <h3 id="motivos-unirse">Mas motivos para unirse</h3>
-    <section>
-        <div id="motivo1">
-            <p>Encuentra alojamiento sin complicaciones <br>
-                Olvídate de las búsquedas interminables y encuentra el espacio ideal en minutos.
-            </p> 
-        </div>
-        <div id="motivo2">
-            <p>Reservas 100% online, seguras y rápidas <br>
-                Todo el proceso es digital, transparente y eficiente.
-        </div>
-        <div id="motivo3">
-            <p>
-                Pensado para estudiantes y trabajadores foráneos <br>
-                Si vienes a Santa Marta por estudios o trabajo, nuestra plataforma te conecta con arrendadores confiables <br>
-                que entienden tus necesidades.
-            </p>
-        </div>
-        <div id="motivo4">
-            <p>
-                Conexión directa con arrendadores sin intermediarios costosos <br>
-                conoce los términos del arriendo de antemano y evita comisiones excesivas.
-            </p>
-        </div>
-    </section>
-    <div id="preguntas-frecuentes">
-        <h4>Preguntas frecuentes</h4>
-        <!--aqui van las pensiones con mayor cantidad de estrellas-->
-    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/icon128px.png" alt="Logo Click2Book" id="icon">
+                    <span>Click2Book</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="bi bi-house"></i> Home</a></li>
+                <li><a href="html/pensiones.html"><i class="bi bi-building"></i> Pensiones</a></li>
+                <li><a href="#"><i class="bi bi-bookmark-check"></i> Guardados</a></li>
+                <li><a href="#"><i class="bi bi-wrench"></i> Ayuda</a></li>
+                <li><a href="html/login.html"><i class="bi bi-person-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Tu hogar ideal por temporada, sin complicaciones</h1>
+            <p>Encuentra, reserva y disfruta con total facilidad</p>
+            <a href="html/registro.html"><button id="btn-registro">Regístrate gratis</button></a>
+            
+            <p>¿Ya tienes una cuenta? <a href="html/login.html">Inicia sesión</a></p>
+        </section>
+
+        <section class="top-rated">
+            <h2>Mejores Calificadas</h2>
+            <div class="pension-list">
+            </div>
+        </section>
+
+        <section class="motivos">
+            <h3>Más motivos para unirse</h3>
+            <div class="motivo">
+                <p><strong>Encuentra alojamiento sin complicaciones</strong><br>
+                    Olvídate de las búsquedas interminables y encuentra el espacio ideal en minutos.
+                </p>
+            </div>
+            <div class="motivo">
+                <p><strong>Reservas 100% online, seguras y rápidas</strong><br>
+                    Todo el proceso es digital, transparente y eficiente.
+                </p>
+            </div>
+            <div class="motivo">
+                <p><strong>Pensado para estudiantes y trabajadores foráneos</strong><br>
+                    Si vienes a Santa Marta por estudios o trabajo, nuestra plataforma te conecta con arrendadores confiables.
+                </p>
+            </div>
+            <div class="motivo">
+                <p><strong>Conexión directa con arrendadores</strong><br>
+                    Evita comisiones excesivas y conoce los términos del arriendo de antemano.
+                </p>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h4>Preguntas Frecuentes</h4>
+        </section>
+    </main>
+
     <footer>
-        <div class="footer">
-            <p id="copyrigth">© 2025 - Todos los derechos reservados</p>
-        </div>
+        <p>&copy; 2025 - Todos los derechos reservados</p>
     </footer>
-  
+
 </body>
 </html>

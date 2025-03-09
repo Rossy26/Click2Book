@@ -1,16 +1,21 @@
 /* general */
-body {
-    background-color: #ece5ce;
-    background-image: url("../assets/background.jpeg");
+html, body {
     margin: 0;
+    
+    background-image: url("../assets/background.jpeg");
     background-position: left;
     background-size: cover;
     background-attachment: fixed;
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
     font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, p, button {
-    font-family: 'Lato', sans-serif;
+main {
+    flex: 1;
 }
 
 a {
@@ -28,40 +33,53 @@ nav a i, nav a p {
 
 /* header */
 nav {
-    display: inline-flex;
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px;
     background-color: #774f38;
-    margin: 0;
-    position: fixed;
-    width: 100%;
-    align-items: center;
-    z-index: 10;
+    
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-nav div a {
+.logo a {
     display: flex;
     align-items: center;
-}
-nav div a:hover {
-    display: flex;
-    align-items: center;
-    transform: scale(1.2);
+    text-decoration: none;
+    color: white;
 }
 
-nav img {
-    padding: 0;
-    margin: 0;
-    width: 50px;
-    height: 50px;
+.logo img {
+    width: 40px;
+    margin-right: 10px;
 }
+
+
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f1d4af;
+    text-decoration: underline;
+}
+
 
 #icon {
     background-color: #774f38;
 }
 
 #filters {
-    padding: 120px 50px 0 50px;
+    padding: 50px 50px 0 50px;
     flex-direction: column;
     display: flex;
     transition: 0.3s ease-in-out;
@@ -241,10 +259,7 @@ main {
 /* footer */
 
 footer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
     background-color: #774f38;
-    width: 100%;
+    align-items: center;
+    text-align: center;
 }
