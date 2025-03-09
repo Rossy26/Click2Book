@@ -7,9 +7,11 @@ body {
     background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
 }
+
 h1, h2, p, button {
     font-family: 'Lato', sans-serif;
 }
+
 a {
     text-decoration: None;
     color: #ece5ce;
@@ -40,6 +42,7 @@ nav div a {
     display: flex;
     align-items: center;
 }
+
 nav div a:hover {
     display: flex;
     align-items: center;
@@ -51,4 +54,9 @@ nav img {
     margin: 0;
     width: 50px;
     height: 50px;
+}
+
+#eslogan {
+    padding: 120px 50px 50px 50px;
+
 }
