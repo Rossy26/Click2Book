@@ -1,11 +1,8 @@
 /* general */
-body {
-    background-color: #ece5ce;
-    background-image: url("../assets/background.jpeg");
+body, html {
     margin: 0;
-    background-position: left;
-    background-size: cover;
-    background-attachment: fixed;
+
+    background-color: #f5f5f5;
     
     height: 100%;
     display: flex;
@@ -20,7 +17,6 @@ main {
 
 a {
     text-decoration: None;
-    color: #1a2015;
 }
 
 a:hover {
@@ -37,12 +33,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #774f38;
+    background-color: #6f6158;
     margin: 0;
-    position: fixed;
-    width: 100%;
     align-items: center;
-    z-index: 10;
 }
 
 nav div a {
@@ -75,13 +68,12 @@ nav a {
 }
 
 nav a:hover {
-    color: #f1d4af;
+    color: #e0dad5;
     text-decoration: underline;
 }
 
-
 #icon {
-    background-color:#515c41;
+    background-color:#6f6158;
 }
 
 #filters {
@@ -101,15 +93,15 @@ nav a:hover {
 }
 
 #filter-inputs select, #filter-inputs input {
-    background-color:#bbbe87;
-    color: #1a2015;
+    background-color:#b8a492;
+    color: #6f6158;
     border-radius: 10%;
     font-size: 18px;
 }
 
 #filter-inputs option:hover {
     color:#1a2015;
-   background-color: #bbbe87;
+    background-color: #f5f5f5;
 
 }
 
@@ -127,12 +119,13 @@ nav a:hover {
 .filter-check input {
     width: 18px;
     height: 18px;
-    background-color:#bbbe87;
-    accent-color: #bbbe87;
+    background-color:#b8a492;
+    accent-color: #6f6158;
 }
 
 .filter-check p {
     font-size: 18px;
+    color: #6f6158;
 }
 
 #filter-btn button {
@@ -145,15 +138,14 @@ nav a:hover {
 }
 
 #filter-btn button {
-    background-color: #bbbe87;
+    background-color: #b8a492;
     color: #1a2015;
 }
 
 #filter-btn button:hover {
-    background-color: #515c41;
-    color: #1a2015;
+    background-color: #6f6158;
+    color: #f5f5f5;
 }
-
 
 /* main */
 main {
@@ -175,7 +167,7 @@ main {
     align-items: center;
     text-align: center;
     padding: 20px;
-    background: #bbbe87;
+    background: #e0dad5;
     transition: transform 0.3s ease-in-out;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 350px;
     
@@ -197,10 +189,15 @@ main {
 .pension a {
     display: inline-flex;
 }
-.div-pension i, .iconos i {
-    color: #1a2015;
+
+.div-pension i, .iconos i{
+    color: #6f6158;
     transition: color 0.3s ease-in-out;
     font-size: 26px;
+}
+
+.datos p {
+    color: #6f6158;
 }
 
 .div-pension i:hover, .iconos i:hover {
@@ -248,6 +245,7 @@ main {
     font-weight: bold;
     color:#1a2015;
 }
+
 .pagina-numeros span {
     cursor: pointer;
 }
@@ -255,8 +253,9 @@ main {
 .pagina-numeros span:hover {
     transform: scale(1.2);
 }
+
 .pagina-activa {
-    background-color: #515c41;
+    background-color: #6f6158;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
@@ -265,10 +264,8 @@ main {
 /* footer */
 
 footer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-    background-color: #774f38;
-    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #6f6158;
+    color: white;
 }

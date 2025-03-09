@@ -2,7 +2,6 @@
 html, body {
     margin: 0;
 
-    background-image:  url("../assets/background.jpeg");
     background-position: left;
     background-size: cover;
     background-attachment: fixed;
@@ -23,7 +22,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #774f38;
+    background-color: #6f6158;
 
     list-style: none;
     display: flex;
@@ -57,14 +56,14 @@ nav a {
 }
 
 nav a:hover {
-    color: #f1d4af;
+    color: #e0dad5;
     text-decoration: underline;
 }
 
 .hero {
     text-align: center;
     padding: 50px 20px;
-    color: #774f38;
+    color: #6f6158;
 }
 
 .hero h1 {
@@ -76,24 +75,30 @@ nav a:hover {
     font-size: 18px;
 }
 
+.hero a {
+    color: #6f6158;
+}
 #btn-registro {
-    background-color: #774f38;
-    color: #ece5ce;
+    background-color: #b8a492;
+    color: #000;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
     margin-top: 15px;
+    border-radius: 10%;
 }
 
 #btn-registro:hover {
-    background-color: #ece5ce;
-    color: #774f38;
+    background-color: #6f6158;
+    color: #f5f5f5;
 }
 
 .top-rated {
     padding: 40px 20px;
     text-align: center;
+    color: #6f6158;
+
 }
 
 .pension-list {
@@ -105,24 +110,27 @@ nav a:hover {
 .motivos {
     padding: 40px;
     text-align: center;
+    color: #6f6158;
 }
 
 .motivo {
-    background-color: #f1d4af;
+    background-color: #6f6158;
     padding: 20px;
     margin: 10px auto;
     width: 80%;
     border-radius: 8px;
+    color: #fcffff;
 }
 
 .faq {
     padding: 40px;
     text-align: center;
+    color: #6f6158;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #774f38;
+    background-color: #6f6158;
     color: white;
 }
