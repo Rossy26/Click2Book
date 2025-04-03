@@ -76,6 +76,24 @@ form input {
     font-size: 14px;
 }
 
+.Tipo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:  4%;
+
+}
+
+.Tipo1 select{
+    border-radius: 5px;
+    font-size: 100%;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    color: #666;
+    
+}
+
 form i {
     position: absolute;
     left: 10px;
